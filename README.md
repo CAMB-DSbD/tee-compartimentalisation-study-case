@@ -1,10 +1,7 @@
-<<<<<<< HEAD
 # Case study of compartmentalisation-based TEE
 We are interested in evaluating two attestable properties: 
 =======
-# Case study of a compartmentalisation-based TEE
->>>>>>> 3d472bdf38eaab2be6f2e4a81233f0d39e7e9ce2
-
+ 
 - the operation of the cloud-based attestation procedure
 discussed in ..
 - some performance properties of the attestbables created
