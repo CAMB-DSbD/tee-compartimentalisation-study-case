@@ -2,7 +2,7 @@
 
   This repository contains the implementation of a study case to demonstrate how to run an integration process inside a trusted execution environment (TEE) using a Morello Board experimental hardware located in Canada. Basically, this case study implements three mock digital services (apps) that run in distinct remore servers in Brazil and an integration process (program) written and compiled for cheri-caps that runs inside a single compartment. The integration process compilation and execution is managed by a laucher program that runs outside the trusted execution environment but still inside the Morello Board operating system. In this case study, our integration process program acts as a client by invoking the remote servers represented by the digital services apps.
 
-# Description
+# Description  
 
 1) App-Store, App-Transport and App-Whatsapp
 - Each of these directories contains an API (API1.py, API2.py, API3.py), a database (compras.db, transport_app.db), and a key pair (cert.pem, priv.pem).
