@@ -3,7 +3,7 @@
 
 We are interested in evaluating two attestable properties:  
  
-- the operation of the cloud-based attestation procedure discussed in - [Steps Toward a Shared Infrastructure for Multi-Party Secure Private Computing in Official Statistics, Fabio Ricciato, Mar 2024.](https://doi.org/10.1177/0282423X241235259 "Fabio Ricciato")
+- the operation of the cloud-based attestation procedure discussed in - [attestablelauncher](https://github.com/CAMB-DSbD/attestablelauncher "repository")
 
 
 - some performance properties of the attestbables created
