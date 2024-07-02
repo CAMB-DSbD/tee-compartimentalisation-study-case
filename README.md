@@ -1,12 +1,14 @@
 # Case study of compartmentalisation-based TEE
-We are interested in evaluating two attestable properties: 
 =======
+
+We are interested in evaluating two attestable properties:  
  
-- the operation of the cloud-based attestation procedure
-discussed in ..
+- the operation of the cloud-based attestation procedure discussed in ...
+
 - some performance properties of the attestbables created
 on a Morello Board with the assistance of the library
 compartmentalisation tool.
+
 
 To this end, we have implemented an Enterprise Application Integration (EAI) also called Integration Solution that operates as follows:
 
