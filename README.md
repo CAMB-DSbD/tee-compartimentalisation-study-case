@@ -30,7 +30,7 @@ the EAI is shown in Fig.
 
 <p align="center">
   <img src="./figures/EAI.png"
-   width="700" title="...">
+   width="450" title="Enterprise application integration inetegrating three components.">
 </p>
 </br>
 
