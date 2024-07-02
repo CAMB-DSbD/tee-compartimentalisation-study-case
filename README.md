@@ -1,16 +1,18 @@
-# Case study of compartmentalisation-based TEE
+# A use-case for attestable evaluation
 =======
 
 We are interested in evaluating two attestable properties:  
  
-- the operation of the cloud-based attestation procedure discussed in ...
+- the operation of the cloud-based attestation procedure discussed in - [Steps Toward a Shared Infrastructure for Multi-Party Secure Private Computing in Official Statistics, Fabio Ricciato, Mar 2024.](https://doi.org/10.1177/0282423X241235259 "Fabio Ricciato")
+
 
 - some performance properties of the attestbables created
 on a Morello Board with the assistance of the library
 compartmentalisation tool.
 
 
-To this end, we have implemented an Enterprise Application Integration (EAI) also called Integration Solution that operates as follows:
+To this end, we have implemented an Enterprise Application Integration 
+(EAI) also called Integration Solution that operates as follows:
 
   
   This repository contains the implementation of a study case to demonstrate how to run an integration process inside a trusted execution environment (TEE) using a Morello Board experimental hardware located in Canada. Basically, this case study implements three mock digital services (apps) that run in distinct remore servers in Brazil and an integration process (program) written and compiled for cheri-caps that runs inside a single compartment. The integration process compilation and execution is managed by a laucher program that runs outside the trusted execution environment but still inside the Morello Board operating system. In this case study, our integration process program acts as a client by invoking the remote servers represented by the digital services apps.
