@@ -26,7 +26,15 @@ taxis that a courtesy taxi is available for them.
 
 
 A conceptual view of the application involved in
-the EAI is shown in Fig. In the implementation 
+the EAI is shown in Fig. 
+
+<p align="center">
+  <img src="./figures/EAI.png"
+   width="700" title="...">
+</p>
+</br>
+
+In the implementation 
 that we have discussed here, the
 component applications (store, taxi and msg) play the 
 role of server against which the
