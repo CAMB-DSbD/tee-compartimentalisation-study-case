@@ -59,6 +59,23 @@ The figure follows a message development where
  
 
 
+In the figure, we assume that the implementation of 
+the EAI is delegated to a third company (say, Bob's) 
+and that four parties involved do not necessarily trust 
+each other. For example, the store, taxi and msg services 
+are reluctant to provide their data to the EAI unless 
+Bob implement mechanisms that guarantee that the data 
+will be protected at execution time.
+
+
+<p align="center">
+  <img src="./figures/EAIwithATT.png"
+   width="350" title="Enterprise application integration with data protection.">
+</p>
+</br>
+
+
+
 
   
   This repository contains the implementation of a study case to demonstrate how to run an integration process inside a trusted execution environment (TEE) using a Morello Board experimental hardware located in Canada. Basically, this case study implements three mock digital services (apps) that run in distinct remore servers in Brazil and an integration process (program) written and compiled for cheri-caps that runs inside a single compartment. The integration process compilation and execution is managed by a laucher program that runs outside the trusted execution environment but still inside the Morello Board operating system. In this case study, our integration process program acts as a client by invoking the remote servers represented by the digital services apps.
