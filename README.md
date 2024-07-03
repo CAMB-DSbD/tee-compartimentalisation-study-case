@@ -191,8 +191,8 @@ for a taxi ride to go home.
 
 
 ### Acknowledgements
-The code was implemented mainly by Regis Rodolfo Schuch (regis.schuch@unijui.edu.br) <br>
-The UML diagrams were drawn by Rafael Z. Frantz (rzfrantz@unijui.edu.br)<br>
+The code was mainly implemented mainly by Regis Rodolfo Schuch (regis.schuch@unijui.edu.br) <br>
+The UML diagrams by Rafael Z. Frantz (rzfrantz@unijui.edu.br)<br>
 Both from the Applied Computing Research Group, Unijui University, Brazil
 
 
