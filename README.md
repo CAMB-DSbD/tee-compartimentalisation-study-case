@@ -65,7 +65,11 @@ and that four parties involved do not necessarily trust
 each other. For example, the store, taxi and msg services 
 are reluctant to provide their data to the EAI unless 
 Bob implement mechanisms that guarantee that the data 
-will be protected at execution time.
+will be protected at execution time. This is a requirement
+that the implementation needs to satisfy.
+As shown in the following figure, we use an 
+attestable to meet this requirement in our 
+implementation.
 
 
 <p align="center">
@@ -74,12 +78,24 @@ will be protected at execution time.
 </p>
 </br>
 
+In the figure, we use the following notation. The
+applications (storage, taxi, msg) execute in conventional
+platforms, this is represented by the *env* boxes 
+drawn with single lines. The attestable (att) is 
+represented by a double line box to indicate that it 
+is an execution environment that guaratees data 
+protection properties. The Enterprise Application 
+Integration (EAI) is deployed and executed inside the
+attestable to protect the data that the applications
+provide to the EAI.
+  
 
 
 
 
   
   This repository contains the implementation of a study case to demonstrate how to run an integration process inside a trusted execution environment (TEE) using a Morello Board experimental hardware located in Canada. Basically, this case study implements three mock digital services (apps) that run in distinct remore servers in Brazil and an integration process (program) written and compiled for cheri-caps that runs inside a single compartment. The integration process compilation and execution is managed by a laucher program that runs outside the trusted execution environment but still inside the Morello Board operating system. In this case study, our integration process program acts as a client by invoking the remote servers represented by the digital services apps.
+
 
 
 <p align="center">
