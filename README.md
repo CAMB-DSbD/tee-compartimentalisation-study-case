@@ -83,7 +83,7 @@ will be protected at execution time.
 
 
 <p align="center">
-  <img src="./figures/compartmentsetup.png"
+  <img src="./figures/compartmentsetup.jpg"
    width="900" title="Compartment set up.">
 </p>
 </br>
