@@ -190,6 +190,13 @@ for a taxi ride to go home.
 </br>
 
 
+
+## Performance properties of the attestable
+We have placed the code and some preliminary results in the
+[tee-morello-performance-experiments  repository](https://github.com/CAMB-DSbD/tee-morello-performance-experiments "Git repository")
+
+
+
 ### Acknowledgements
 The code was mainly implemented mainly by Regis Rodolfo Schuch (regis.schuch@unijui.edu.br) <br>
 The UML diagrams by Rafael Z. Frantz (rzfrantz@unijui.edu.br)<br>
