@@ -158,6 +158,11 @@ The integration process compilation and execution is managed by a laucher progra
 
 
 ## Execution of a read operation
+The following diagram shows the development of the
+execution of a read operation that the EAI executes
+against one of the applications (for example,
+the storage) to request data.
+
 
 <p align="center">
   <img src="./figures/readoperation.jpg"
@@ -168,6 +173,15 @@ The integration process compilation and execution is managed by a laucher progra
 
 
 ## Execution of a write operation
+The following diagram shows the development of the
+execution of a write operation that the EAI executes
+against one of the applications to send it some data. 
+For example, the EAI executes a write operation against
+the msg application to notify it that a client is ready
+for a taxi ride to go home.
+
+
+
 <p align="center">
   <img src="./figures/writeoperation.jpg"
    width="1000" title="Write operation.">
