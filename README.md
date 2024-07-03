@@ -201,9 +201,8 @@ Both from the Applied Computing Research Group, Unijui University, Brazil
 ## Corresponding author  
 carlos.molina@cl.cam.ac.uk   
 Computer Lab, University of Cambridge.
+
  
-### Acknowledgement
-Code implemented mainly by 
 
 
 
