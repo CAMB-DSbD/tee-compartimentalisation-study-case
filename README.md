@@ -84,10 +84,25 @@ will be protected at execution time.
 
 <p align="center">
   <img src="./figures/compartmentsetup.jpg"
-   width="900" title="Compartment set up.">
+   width="1000 title="Compartment set up.">
 </p>
 </br>
 
+
+
+<p align="center">
+  <img src="./figures/readoperation.jpg"
+   width="1000" title="Read operation.">
+</p>
+</br>
+
+
+
+<p align="center">
+  <img src="./figures/writeoperation.jpg"
+   width="1000" title="Write operation.">
+</p>
+</br>
 
 # Description  
 
