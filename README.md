@@ -24,7 +24,7 @@ The latter (for example, whatsapp) is used by the
 store to notify shoppers that are entitled to free 
 taxis that a courtesy taxi is available for them. 
 
-
+# Conceptual view of the EAI
 A conceptual view of the application involved in
 the EAI is shown in Fig. 
 
@@ -36,12 +36,13 @@ the EAI is shown in Fig.
 
 In the implementation 
 that we have discussed here, the
-component applications (store, taxi and msg) play the 
-role of server against which the
+component applications (store, taxi and msg) play 
+the role of servers against which the
 EAI operating as a client, places requests.
 The figure follows a message development where
  
-1. The EAI request a copy of the bill of a client, say Alice's.
+1. The EAI request a copy of the bill of the
+   store's client, say Alice's.
 
 1. The stores replies with the bill amount. Let us assume that
    it is above 150.00 pounds, thus, Alice is entitled to a 
@@ -59,6 +60,7 @@ The figure follows a message development where
  
 
 
+# Implementation architecture of the EAI
 In the figure, we assume that the implementation of 
 the EAI is delegated to a third company (say, Bob's) 
 and that four parties involved do not necessarily trust 
@@ -87,40 +89,20 @@ is an execution environment that guaratees data
 protection properties. The Enterprise Application 
 Integration (EAI) is deployed and executed inside the
 attestable to protect the data that the applications
-provide to the EAI.
-  
+provide to the EAI. We remark that the EAI is a client
+of the three servers (store, taxi and msg) and as
+such, it is programmed to place requests periodically.
 
-
-
-
-  
-  This repository contains the implementation of a study case to demonstrate how to run an integration process inside a trusted execution environment (TEE) using a Morello Board experimental hardware located in Canada. Basically, this case study implements three mock digital services (apps) that run in distinct remore servers in Brazil and an integration process (program) written and compiled for cheri-caps that runs inside a single compartment. The integration process compilation and execution is managed by a laucher program that runs outside the trusted execution environment but still inside the Morello Board operating system. In this case study, our integration process program acts as a client by invoking the remote servers represented by the digital services apps.
-
-
-
-<p align="center">
-  <img src="./figures/compartmentsetup.jpg"
-   width="1000 title="Compartment set up.">
-</p>
 </br>
+To remark the practicality of our current implementation
+we mention that the attestable is created in a Morello
+Board physically located in Toronto. The applications
+are run in conventional computer physically located in
+the premisis of the Applied Computing Research Group
+of the University of Ijui, Brazil.
+ 
 
-
-
-<p align="center">
-  <img src="./figures/readoperation.jpg"
-   width="1000" title="Read operation.">
-</p>
-</br>
-
-
-
-<p align="center">
-  <img src="./figures/writeoperation.jpg"
-   width="1000" title="Write operation.">
-</p>
-</br>
-
-# Description  
+## Functionality of the components  
 
 1) App-Store, App-Transport and App-Whatsapp
 - Each of these directories contains an API (API1.py, API2.py, API3.py), a database (compras.db, transport_app.db), and a key pair (cert.pem, priv.pem).
@@ -138,9 +120,21 @@ provide to the EAI.
  - programs-data-base/cheri-caps-executables: Contains the executable binary codes generated for cheri-caps.
  - programs-data-base/certificates: Contains the attestables and the keys generated for the execution environment of each executable binary code.
  - attestable-data/signatures: Contains the signatures of the executable binary codes.
+  
+ 
 
-   
-# Execution sequence
+# Attestation and set up of the attestable
+The integration process compilation and execution is managed by a laucher program that runs outside the trusted execution environment but still inside the Morello Board operating system. In this case study, our integration process program acts as a client by invoking the remote servers represented by the digital services apps.
+
+
+
+<p align="center">
+  <img src="./figures/compartmentsetup.jpg"
+   width="1000 title="Compartment set up.">
+</p>
+</br>
+
+
 
 1) Launcher initialisation
  - The launcher is started by running launcher.py.
@@ -160,3 +154,30 @@ provide to the EAI.
  - The generate_certificate.py script generates the corresponding keys and certificates for the running executable binary code, including information such as CPU model, number of CPUs, and memory addresses.
 6) Interaction with External APIs
  - The integration_process.c makes HTTPS calls to the defined APIs (API1_URL, API2_URL, API3_URL), using OpenSSL to check sales, book trips and send confirmation messages via WhatsApp.
+
+
+
+# Execution of a read operation
+
+<p align="center">
+  <img src="./figures/readoperation.jpg"
+   width="1000" title="Read operation.">
+</p>
+</br>
+
+
+
+# Execution of a write operation
+<p align="center">
+  <img src="./figures/writeoperation.jpg"
+   width="1000" title="Write operation.">
+</p>
+</br>
+
+
+
+
+
+   
+ 
+
