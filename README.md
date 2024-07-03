@@ -24,7 +24,7 @@ The latter (for example, whatsapp) is used by the
 store to notify shoppers that are entitled to free 
 taxis that a courtesy taxi is available for them. 
 
-# Conceptual view of the EAI
+## Conceptual view of the EAI
 A conceptual view of the application involved in
 the EAI is shown in Fig. 
 
@@ -60,7 +60,7 @@ The figure follows a message development where
  
 
 
-# Implementation architecture of the EAI
+## Implementation architecture of the EAI
 In the figure, we assume that the implementation of 
 the EAI is delegated to a third company (say, Bob's) 
 and that four parties involved do not necessarily trust 
@@ -102,7 +102,7 @@ the premisis of the Applied Computing Research Group
 of the University of Ijui, Brazil.
  
 
-## Functionality of the components  
+### Functionality of the components  
 
 1) App-Store, App-Transport and App-Whatsapp
 - Each of these directories contains an API (API1.py, API2.py, API3.py), a database (compras.db, transport_app.db), and a key pair (cert.pem, priv.pem).
@@ -123,7 +123,7 @@ of the University of Ijui, Brazil.
   
  
 
-# Attestation and set up of the attestable
+## Attestation and set up of the attestable
 The integration process compilation and execution is managed by a laucher program that runs outside the trusted execution environment but still inside the Morello Board operating system. In this case study, our integration process program acts as a client by invoking the remote servers represented by the digital services apps.
 
 
@@ -157,7 +157,7 @@ The integration process compilation and execution is managed by a laucher progra
 
 
 
-# Execution of a read operation
+## Execution of a read operation
 
 <p align="center">
   <img src="./figures/readoperation.jpg"
@@ -167,7 +167,7 @@ The integration process compilation and execution is managed by a laucher progra
 
 
 
-# Execution of a write operation
+## Execution of a write operation
 <p align="center">
   <img src="./figures/writeoperation.jpg"
    width="1000" title="Write operation.">
