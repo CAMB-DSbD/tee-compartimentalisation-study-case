@@ -77,8 +77,17 @@ will be protected at execution time.
 
 
 
+
   
   This repository contains the implementation of a study case to demonstrate how to run an integration process inside a trusted execution environment (TEE) using a Morello Board experimental hardware located in Canada. Basically, this case study implements three mock digital services (apps) that run in distinct remore servers in Brazil and an integration process (program) written and compiled for cheri-caps that runs inside a single compartment. The integration process compilation and execution is managed by a laucher program that runs outside the trusted execution environment but still inside the Morello Board operating system. In this case study, our integration process program acts as a client by invoking the remote servers represented by the digital services apps.
+
+
+<p align="center">
+  <img src="./figures/compartmentsetup.png"
+   width="900" title="Compartment set up.">
+</p>
+</br>
+
 
 # Description  
 
