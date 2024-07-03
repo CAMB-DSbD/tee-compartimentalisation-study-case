@@ -11,8 +11,9 @@ on a Morello Board with the assistance of the library
 compartmentalisation tool.
 
 
-To this end, we have implemented an Enterprise Application Integration 
-(EAI) also called Integration Solution that operates as follows:
+To this end, we have implemented an Enterprise Application 
+Integration (EAI) also called Integration Solution that 
+operates as follows:
 
 In this use case, a store offers free taxi rides
 back home to clients that spend at least 
@@ -187,6 +188,23 @@ for a taxi ride to go home.
    width="1000" title="Write operation.">
 </p>
 </br>
+
+
+### Acknowledgements
+The code was implemented mainly by Regis Rodolfo Schuch (regis.schuch@unijui.edu.br) <br>
+The UML diagrams were drawn by Rafael Z. Frantz (rzfrantz@unijui.edu.br)<br>
+Both from the Applied Computing Research Group, Unijui University, Brazil
+
+
+
+
+## Corresponding author  
+carlos.molina@cl.cam.ac.uk   
+Computer Lab, University of Cambridge.
+ 
+### Acknowledgement
+Code implemented mainly by 
+
 
 
 
