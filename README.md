@@ -200,14 +200,15 @@ We have placed the code and some preliminary results in the
 ### Acknowledgements
 The code was mainly implemented mainly by Regis Rodolfo Schuch (regis.schuch@unijui.edu.br) <br>
 The UML diagrams by Rafael Z. Frantz (rzfrantz@unijui.edu.br)<br>
-Both from the Applied Computing Research Group, Unijui University, Brazil
+Both members of the
+[Applied Computing Research Group, Unijui University, Brazil](http://gca.unijui.edu.br "Web page").
 
-
-
+ 
 
 ## Corresponding author  
 Carlos Molina-Jimenez (carlos.molina@cl.cam.ac.uk)   
 Computer Lab, University of Cambridge.
+[CAMB project](https://www.cl.cam.ac.uk/research/srg/projects/camb/ "Web page").
 
  
 
