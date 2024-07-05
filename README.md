@@ -198,7 +198,10 @@ We have placed the code and some preliminary results in the
 
 
 ### Acknowledgements
-The code was mainly implemented mainly by Regis Rodolfo Schuch (regis.schuch@unijui.edu.br) <br>
+ The code was mainly implemented mainly by 
+ [Regis Rodolfo Schuch](http://gca.unijui.edu.br/student/?member=81 "Web page")     
+ (regis.schuch@unijui.edu.br)<br>    
+ 
 The UML diagrams by Rafael Z. Frantz (rzfrantz@unijui.edu.br)<br>
 Both members of the
 [Applied Computing Research Group, Unijui University, Brazil](http://gca.unijui.edu.br "Web page").
